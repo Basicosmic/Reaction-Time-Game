@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(95, 95, 95);
+    color:gold;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.but {
+
+    background-color:rgb(211, 211, 211);
+    /* background-color:rgb(144, 238, 144); */
+    height:5rem;
+    width:5rem;
+    font-size: 4rem;
+}
+.topRow {
+    display: flex;
+    justify-content: center;
+    padding:0px;
+    margin:0px;
+}
+.midRow {
+    display: flex;
+    justify-content: center;
+    padding:0px;
+    margin:0px;
+}
+.botRow {
+    display: flex;
+    justify-content: center;
+    padding:0px;
+    margin:0px;
+}
+.retry {
+    display: flex;
+    justify-content: center;
+}

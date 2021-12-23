@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <title>Reaction Time</title>
+</head>
+<body>
+    <h1>Reaction Time</h1>
+    
+    <h2>Click the number in ascending order as fast as possible</h2>
+    <h1>Your time is:</h1>
+    <h1 id="displayTime">0.000 s</h1>
+  
+    <!-- Game -->
+    <br>
+    <div class="game">
+        <div class="topRow">
+            <button class="but" id="but1" onclick="checkReq(this)">1</button>
+            <button class="but" id="but2" onclick="checkReq(this)">1</button>
+            <button class="but" id="but3" onclick="checkReq(this)">1</button>
+        </div>
+        
+        <div class="midRow">
+            <button class="but" id="but4" onclick="checkReq(this)">1</button>
+            <button class="but" id="but5" onclick="checkReq(this)">1</button>
+            <button class="but" id="but6" onclick="checkReq(this)">1</button>
+        </div>
+        
+        <div class="botRow">
+            <button class="but" id="but7" onclick="checkReq(this)">1</button>
+            <button class="but" id="but8" onclick="checkReq(this)">1</button>
+            <button class="but" id="but9" onclick="checkReq(this)">1</button>
+        </div>
+        <div class="retry">
+            <button onclick="reset()">Retry</button>
+        </div>
+        
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

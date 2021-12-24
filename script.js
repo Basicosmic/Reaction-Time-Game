@@ -2,13 +2,13 @@ var start = false;
 var time1 = 0;
 var time2 = 0;
 var counter = 1;
+var numList = [1,2,3,4,5,6,7,8,9]
 
 function currentTime() {
     const d = new Date();
     time = d.getTime();
     return time;
 }
-var numList = [1,2,3,4,5,6,7,8,9]
 
 function randomNoRepeats(array) {
     var copy = array.slice(0);
@@ -34,12 +34,12 @@ scramble();
 
 function changeColor(element) {
     var currentColor = window.getComputedStyle( element ,null).getPropertyValue('background-color');
-    if(currentColor == "rgb(211, 211, 211)") {
-        element.style.backgroundColor = "rgb(144, 238, 144)"
+    if(currentColor == "rgb(211, 211, 211)") { //lightgray
+        element.style.backgroundColor = "rgb(144, 238, 144)" //lightgreen
     }
   } 
 function resetColor(element) {
-    element.style.backgroundColor = "rgb(211, 211, 211)"
+    element.style.backgroundColor = "rgb(211, 211, 211)" ////lightgray
 } 
 
 function checkReq(element) {
@@ -54,8 +54,6 @@ function checkReq(element) {
             sec = Math.floor(interval/1000)
             mili = interval-1000*sec
             document.getElementById("displayTime").innerHTML = sec +"."+ mili + " s" ;
-            console.log(time2,"time 2");
-            console.log(interval,"interval");
 
           }
       }
